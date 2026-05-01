@@ -28,6 +28,7 @@ body {
   background: var(--bg);
   color: var(--cream);
   font-family: 'Segoe UI', system-ui, sans-serif;
+  font-size: 1.1rem;
   overflow-x: hidden;
 }
 
@@ -54,8 +55,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 52px;
-  height: 58px;
+  padding: 0 64px;
+  height: 76px;
   background: linear-gradient(180deg, rgba(10, 9, 8, 0.75) 0%, transparent 100%);
   transition: background 0.35s, backdrop-filter 0.35s;
 }
@@ -73,14 +74,14 @@ nav.scrolled {
 }
 
 .nav-brand img {
-  height: 28px;
+  height: 34px;
   filter: brightness(0) invert(1);
   opacity: 0.75;
 }
 
 .nav-brand-name {
-  font-size: 0.72rem;
-  letter-spacing: 0.3em;
+  font-size: 0.8rem;
+  letter-spacing: 0.32em;
   text-transform: uppercase;
   color: var(--white);
   opacity: 0.7;
@@ -89,7 +90,7 @@ nav.scrolled {
 .nav-icons {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 24px;
 }
 
 .nav-icons a {
@@ -105,8 +106,8 @@ nav.scrolled {
 }
 
 .nav-icons svg {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   fill: currentColor;
 }
 
@@ -141,19 +142,19 @@ nav.scrolled {
 .hero-content {
   position: relative;
   z-index: 1;
-  padding: 130px 64px 90px;
-  max-width: 600px;
+  padding: 160px 80px 100px;
+  max-width: 720px;
 }
 
 .hero-logo {
-  width: 300px;
+  width: 380px;
   max-width: 100%;
   margin-bottom: 22px;
   filter: drop-shadow(0 4px 24px rgba(0, 0, 0, 0.5));
 }
 
 .hero-tagline {
-  font-size: 1rem;
+  font-size: 1.15rem;
   color: var(--silk);
   line-height: 1.75;
   margin-bottom: 36px;
@@ -170,11 +171,11 @@ nav.scrolled {
   display: inline-flex;
   align-items: center;
   gap: 9px;
-  padding: 13px 30px;
+  padding: 16px 36px;
   background: var(--white);
   color: var(--bg);
-  font-size: 0.82rem;
-  letter-spacing: 0.18em;
+  font-size: 0.9rem;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
   transition: background 0.18s, transform 0.15s;
@@ -189,12 +190,12 @@ nav.scrolled {
   display: inline-flex;
   align-items: center;
   gap: 9px;
-  padding: 13px 30px;
+  padding: 16px 36px;
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: var(--white);
-  font-size: 0.82rem;
-  letter-spacing: 0.18em;
+  font-size: 0.9rem;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
   transition: background 0.18s, border-color 0.18s;
@@ -209,14 +210,14 @@ nav.scrolled {
 
 /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ SHARED SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .section {
-  max-width: 1080px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 80px 52px;
+  padding: 100px 64px;
 }
 
 .section-title {
-  font-size: 1.05rem;
-  letter-spacing: 0.28em;
+  font-size: 1.25rem;
+  letter-spacing: 0.32em;
   text-transform: uppercase;
   color: var(--white);
   opacity: 0.85;
@@ -224,10 +225,10 @@ nav.scrolled {
 }
 
 .section-rule {
-  width: 44px;
+  width: 56px;
   height: 1px;
   background: rgba(255, 255, 255, 0.28);
-  margin-bottom: 36px;
+  margin-bottom: 44px;
 }
 
 /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ O PROJEKCIE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
@@ -239,8 +240,8 @@ nav.scrolled {
 }
 
 .about-text p {
-  font-size: 0.95rem;
-  line-height: 1.82;
+  font-size: 1.05rem;
+  line-height: 1.85;
   color: var(--silk);
   margin-bottom: 16px;
 }
@@ -303,10 +304,10 @@ nav.scrolled {
   background: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
-  width: 36px;
-  height: 36px;
+  width: 46px;
+  height: 46px;
   cursor: pointer;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -336,8 +337,8 @@ nav.scrolled {
 }
 
 .indicator {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.3);
   cursor: pointer;
@@ -367,12 +368,12 @@ nav.scrolled {
   flex-direction: column;
   align-items: center;
   gap: 12px;
-  padding: 30px 20px;
+  padding: 40px 24px;
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.13);
   color: var(--white);
-  font-size: 0.82rem;
-  letter-spacing: 0.2em;
+  font-size: 0.92rem;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   text-decoration: none;
   position: relative;
@@ -393,8 +394,8 @@ nav.scrolled {
 }
 
 .btn-download svg {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   fill: currentColor;
   opacity: 0.55;
 }
@@ -402,9 +403,9 @@ nav.scrolled {
 .download-hint {
   display: block;
   text-align: center;
-  margin: -10px 0 28px;
-  font-size: 0.72rem;
-  letter-spacing: 0.18em;
+  margin: -12px 0 32px;
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--white-dim);
   opacity: 0.55;
@@ -413,8 +414,8 @@ nav.scrolled {
 
 .version-note {
   display: block;
-  margin-top: 22px;
-  font-size: 0.7rem;
+  margin-top: 28px;
+  font-size: 0.8rem;
   letter-spacing: 0.2em;
   color: var(--white-dim);
   opacity: 0.32;
@@ -426,8 +427,8 @@ nav.scrolled {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
-  padding: 30px 20px;
+  gap: 16px;
+  padding: 40px 24px;
   background: var(--bg2);
   border: 1px solid rgba(255, 255, 255, 0.08);
   position: relative;
@@ -443,30 +444,30 @@ nav.scrolled {
 }
 
 .install-step svg {
-  width: 28px;
-  height: 28px;
+  width: 36px;
+  height: 36px;
   fill: currentColor;
   opacity: 0.65;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .step-title {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   color: var(--white);
   font-weight: 500;
   font-family: 'Perpetua', Georgia, serif;
 }
 
 .step-text {
-  font-size: 0.82rem;
+  font-size: 0.91rem;
   color: var(--silk);
   line-height: 1.55;
   opacity: 0.65;
 }
 
 .support-box {
-  margin-top: 60px;
-  padding: 50px 40px;
+  margin-top: 80px;
+  padding: 64px 48px;
   background: var(--bg2);
   border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 8px;
@@ -477,24 +478,25 @@ nav.scrolled {
 }
 
 .support-title {
-  font-size: 1.25rem;
-  letter-spacing: 0.1em;
+  font-size: 1.5rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--white);
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   opacity: 0.95;
 }
 
 .support-subtitle {
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   color: var(--silk);
   opacity: 0.7;
-  margin-bottom: 28px;
-  max-width: 500px;
+  margin-bottom: 36px;
+  max-width: 600px;
   line-height: 1.6;
 }
 
 /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ TWÃ“RCY â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ────────────────── TWÓRCY ────────────────── */
 .credits-section {
   background: var(--bg2);
   border-top: 1px solid rgba(255, 255, 255, 0.06);
@@ -502,19 +504,19 @@ nav.scrolled {
 
 .credits-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 32px;
 }
 
 .credits-group-title {
   font-family: 'Perpetua', Georgia, serif;
-  font-size: 0.68rem;
+  font-size: 0.8rem;
   letter-spacing: 0.32em;
   text-transform: uppercase;
   color: var(--white);
   opacity: 0.38;
-  margin-bottom: 14px;
-  padding-bottom: 8px;
+  margin-bottom: 18px;
+  padding-bottom: 10px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.07);
 }
 
@@ -533,30 +535,30 @@ nav.scrolled {
 
 .credits-name {
   display: block;
-  font-size: 0.88rem;
+  font-size: 1.05rem;
   color: var(--cream);
 }
 
 .credits-role {
   display: block;
-  font-size: 0.72rem;
+  font-size: 0.82rem;
   color: var(--white-dim);
   opacity: 0.42;
-  margin-top: 1px;
+  margin-top: 2px;
   line-height: 1.4;
 }
 
 /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ FOOTER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 footer {
   border-top: 1px solid rgba(255, 255, 255, 0.05);
-  padding: 26px 52px;
+  padding: 36px 64px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .footer-line {
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   letter-spacing: 0.1em;
   color: var(--white-dim);
   opacity: 0.32;
@@ -577,7 +579,7 @@ footer {
 }
 
 .footer-legal {
-  font-size: 0.67rem;
+  font-size: 0.75rem;
   color: var(--white-dim);
   opacity: 0.22;
   text-align: right;
@@ -613,17 +615,17 @@ footer {
   }
 
   .hero-content {
-    padding: 110px 28px 70px;
+    padding: 140px 36px 80px;
   }
 
   .section {
-    padding: 60px 28px;
+    padding: 80px 36px;
   }
 
   footer {
     flex-direction: column;
     gap: 10px;
-    padding: 24px 28px;
+    padding: 32px 36px;
   }
 
   .footer-legal {
