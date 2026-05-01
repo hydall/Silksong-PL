@@ -1,4 +1,23 @@
-﻿const nav = document.getElementById('navbar');
+﻿// ── Download links from manifest ──
+(async () => {
+  try {
+    const res = await fetch('zips/manifest.json');
+    if (!res.ok) return;
+    const files = await res.json();
+    document.querySelectorAll('.btn-download[data-platform]').forEach(btn => {
+      const platform = btn.dataset.platform.toLowerCase();
+      const match = files.find(f => f.toLowerCase().replace(/\.zip$/, '').endsWith('_' + platform));
+      if (match) {
+        btn.href = 'zips/' + match;
+        btn.setAttribute('download', '');
+      }
+    });
+  } catch (e) {
+    console.warn('Nie można załadować manifest.json:', e);
+  }
+})();
+
+const nav = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 40);
 }, { passive: true });

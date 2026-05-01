@@ -495,6 +495,90 @@ nav.scrolled {
   line-height: 1.6;
 }
 
+/* ── HISTORIA ZMIAN ── */
+.changelog-section {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.checkpoint {
+  display: flex;
+  gap: 32px;
+}
+
+.checkpoint-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.checkpoint-dot {
+  width: 12px;
+  height: 12px;
+  background: var(--white);
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+  position: relative;
+  z-index: 2;
+  margin-top: 8px;
+}
+
+.checkpoint-line {
+  width: 1px;
+  flex-grow: 1;
+  background: rgba(255, 255, 255, 0.15);
+  margin: 4px 0;
+}
+
+.checkpoint-content {
+  padding-bottom: 48px;
+}
+
+.checkpoint-version {
+  font-family: 'Perpetua', Georgia, serif;
+  font-size: 1.4rem;
+  color: var(--white);
+  margin-bottom: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.checkpoint-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0;
+}
+
+.checkpoint-list li {
+  color: var(--silk);
+  font-size: 1rem;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 24px;
+  opacity: 0.85;
+}
+
+.checkpoint-list li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.checkpoint:last-child .checkpoint-content {
+  padding-bottom: 0;
+}
+
+
 /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ TWÃ“RCY â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 /* ────────────────── TWÓRCY ────────────────── */
 .credits-section {
